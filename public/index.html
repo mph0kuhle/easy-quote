@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Build Something Amazing Together!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Let's Build Something Amazing Together! ✨</h1>
+            <p>We're excited to hear about your project. Tell us what you have in mind!</p>
+        </div>
+
+        <form id="quoteForm" action="/submit-quote" method="POST" class="quote-form">
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="name">What should we call you? 👋</label>
+                <input type="text" id="name" name="name" required placeholder="Your awesome name here...">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Where can we reach you? 📧</label>
+                <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Best number to reach you? 📱</label>
+                <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567">
+            </div>
+
+            <div class="form-group">
+                <label for="projectType">What kind of project is this? 🚀</label>
+                <select id="projectType" name="projectType" required>
+                    <option value="">Choose your adventure...</option>
+                    <option value="Website Design">Website Design</option>
+                    <option value="Web Development">Web Development</option>
+                    <option value="Mobile App">Mobile App</option>
+                    <option value="E-commerce Store">E-commerce Store</option>
+                    <option value="Logo & Branding">Logo & Branding</option>
+                    <option value="Digital Marketing">Digital Marketing</option>
+                    <option value="Custom Software">Custom Software</option>
+                    <option value="Other">Something Else (We Love Unique Ideas!)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="description">Paint us a picture - what exactly do you need? 🎨</label>
+                <textarea id="description" name="description" required rows="5" 
+                    placeholder="Describe your vision... The more details, the better we can help!"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="timeline">When do you need this wrapped up? ⏰</label>
+                <select id="timeline" name="timeline" required>
+                    <option value="">Pick a timeline...</option>
+                    <option value="ASAP (Rush job - we get it!)">ASAP (Rush job - we get it!)</option>
+                    <option value="Within 2 weeks">Within 2 weeks</option>
+                    <option value="Within a month">Within a month</option>
+                    <option value="Within 2-3 months">Within 2-3 months</option>
+                    <option value="No rush, quality first">No rush, quality first</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="budget">Ballpark budget we're working with? 💰</label>
+                <select id="budget" name="budget" required>
+                    <option value="">Select your range...</option>
+                    <option value="Under $1,000">Under $1,000</option>
+                    <option value="$1,000 - $5,000">$1,000 - $5,000</option>
+                    <option value="$5,000 - $10,000">$5,000 - $10,000</option>
+                    <option value="$10,000 - $25,000">$10,000 - $25,000</option>
+                    <option value="$25,000+">$25,000+</option>
+                    <option value="Let's discuss">Let's discuss</option>
+                </select>
+            </div>
+
+            <button type="submit" class="submit-btn">
+                <span class="btn-text">Send My Request 🚀</span>
+                <div class="btn-loader"></div>
+            </button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
